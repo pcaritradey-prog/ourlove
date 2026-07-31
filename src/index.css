@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-script: 'Dancing Script', 'Caveat', cursive;
+    --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background: radial-gradient(circle at top right, #fff5f8, #fdf8f5, #f3f0ff);
+    background-attachment: fixed;
+    color: #382830;
+    overflow-x: hidden;
+  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Custom Glassmorphism & Natural Tones Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 30px -10px rgba(236, 72, 153, 0.06), 0 4px 16px rgba(0, 0, 0, 0.02);
+}
+
+.glass-card-hover {
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 20px 40px -12px rgba(236, 72, 153, 0.12), 0 8px 20px rgba(0, 0, 0, 0.03);
+  transform: translateY(-3px);
+}
+
+.rose-glow {
+  box-shadow: 0 0 40px rgba(244, 114, 182, 0.2);
+}
+
+.polaroid-frame {
+  background-color: #ffffff;
+  padding: 14px 14px 44px 14px;
+  box-shadow: 0 14px 32px -8px rgba(131, 24, 67, 0.1), 0 2px 8px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.polaroid-frame:hover {
+  box-shadow: 0 24px 48px -12px rgba(131, 24, 67, 0.18), 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.paper-texture {
+  background-color: #fdfbf7;
+  background-image: radial-gradient(#f3e8ee 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-animation {
+  animation: spin-slow 18s linear infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdf8f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f472b6;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #db2777;
+}
+
+

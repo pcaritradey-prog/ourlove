@@ -1,0 +1,6 @@
+{
+  "name": "Love Letter — Girlfriend's Day Surprise",
+  "description": "A deeply personal, interactive digital love letter and memory scrapbook crafted with affection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
